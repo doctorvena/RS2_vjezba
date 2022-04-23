@@ -13,8 +13,9 @@ namespace eProdaja.Controllers
             _proizvodiService = proizvodiService;
         }
         [HttpGet]
-        public IEnumerable<Proizvodi> Get(string naziv, string sifra)
+        public IEnumerable<Proizvodi> Get()
         {
+            
             return _proizvodiService.Get();
         }
         [HttpGet("{id}")]
